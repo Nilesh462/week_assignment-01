@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="./8c1ca88a053554c6421e9a430e8d64ca.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<style>
+    .header{
+        display: flex;
+        justify-content: space-between;
+    }
+    .contact {
+        padding: 10px;
+    }
+    .i-logo {
+        width: 50px;
+    }
+    .form-section {
+            /* border-top: 1px solid #000; */
+            padding: 10px;
+        }
+        .form-section form {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 10px;
+        }
+        .form-section form label {
+            align-self: center;
+        }
+    .form-section form input[type="text"],
+    .form-section form input[type="email"] {
+        width: 100%;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+    .form-section form .checkbox {
+            grid-column: span 2;
+            display: flex;
+            align-items: center;
+        }
+        .form-section form .checkbox input {
+            margin-right: 10px;
+        }
+        .form-section form .submit {
+            grid-column: span 2;
+            display: flex;
+            justify-content: center;
+        }
+        .form-section form .submit input {
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        footer {
+            text-align: center;
+            font-size: small;
+            padding: 10px;
+            /* border-top: 1px solid #000; */
+        }
+</style>
+<body>
+    <div class="header">
+        <div >
+            <img src="ss.jpg" alt="shopper stop logo" class="i-logo">
+        </div>
+        <div>
+            <h1><b>SHOPPERS STOP</b></h1>
+        </div>
+        <div class="contact">
+            <h2>Contacts</h2>
+        </div>
+    </div>
+    <main>
+        <div>
+          <P>We're proud to be known for offering exceptional quality and unparalleled comfort at prices that are truly affordable. Our extensive range of apparel is crafted from the finest fabrics, ensuring that every piece not only looks great but feels incredibly comfortable to wear. We believe that everyone deserves to look stylish and feel confident, no matter their budget. That’s why we provide a diverse selection of clothing and accessories that cater to all ages and styles, from trendy outfits for teens to classic pieces for adults and cozy, practical choices for children and seniors.</P>
+          <P>Our commitment to quality means that each item in our collection is built to last, maintaining its shape, color, and softness wash after wash. Whether you're searching for everyday basics, office wear, activewear, or special occasion outfits, you'll find everything you need at prices that won't break the bank. Plus, our user-friendly website makes it easy to browse and shop for your entire family in one convenient place.</P>
+          <P>Experience the best in fashion without compromising on quality or comfort. Join countless satisfied customers who trust Shoppers Stop  for all their clothing needs. Shop now and discover the perfect blend of style, comfort, and affordability that makes us a favorite destination for shoppers of all ages.</P>
+        </div>
+        <div class="form-section">
+            <h1>Form</h1>
+            <form>
+                <label for="name">NAME</label>
+                <input type="text" id="name" name="name">
+                
+                <label for="email">EMAIL</label>
+                <input type="email" id="email" name="email">
+
+                <label for="genre">FAVOURITE GENRE</label>
+                <input list="browsers" id="genre">
+                <datalist id="browsers">
+                  <option value="Action">
+                  <option value="Thriller">
+                  <option value="Romantic">
+                  <option value="Fiction">
+                  <option value="Mystery">
+                </datalist>
+
+                <div class="checkbox">
+                    <input type="checkbox" id="subscribe" name="subscribe">
+                    <label for="subscribe">SUBSCRIBE TO OUR NEWSLETTER VIA EMAIL</label>
+                </div>
+
+                <div class="submit">
+                    <input type="submit" value="SUBMIT">
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        FOOTER TEXT IN SMALL<br>
+        ALL RIGHTS RESERVED
+    </footer>
+</body>
+</html>
